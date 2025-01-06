@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,500;1,500&display=swap');
+
+body {
+    min-height: 100vh;
+    background: rgb(43,58,92);
+    background: radial-gradient(circle, rgba(43,58,92,1) 0%, rgba(0,16,52,1) 100%);
+    color: #fdffe3;
+    font-family: "Host Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* vertical */
+  align-items: center; /* horisontal */
+  flex-direction: row;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 350px;
+  background-color: #131c27;
+  font-size: 15pt;
+  border-radius: 20px;
+  padding: 40px;
+  
+}
+
+.name{
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.pfp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+.user{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: #5865F2;
+  margin-bottom: 40px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.github, .youtube, .twitch, .steam, .support {
+  display: flex;
+  height: 50px;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-bottom: 15px; /* Add margin to separate the links */
+  transition: transform 0.2s ease;
+}
+
+.github {
+  background-color: #2dba4e;
+}
+
+.youtube {
+  background-color: #FF0033;
+}
+
+.twitch {
+  background-color: #6441a5;
+}
+
+.steam {
+  background-color: #1b2838;
+}
+
+.support {
+  background-color: #F57D07;
+}
+
+.links a {
+  color: #fdffe3;
+  text-decoration: none;
+}
+
+.github:hover, .youtube:hover, .twitch:hover, .steam:hover, .support:hover {
+  transform: scale(1.05); /* Scale up the link slightly */
+}
+
+.time{
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+  color: #f6ff79;
+}
