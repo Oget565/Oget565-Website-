@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oget565</title>
-    <link rel="stylesheet" href="styles.css?">
+    <link rel="stylesheet" href="styles.css?v=1.0">
     <script src="script.js"></script>
+    <script>
+        function updateClock() {
+            const options = { 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit', 
+                timeZone: 'America/New_York'  // Change this to any timezone you want
+            };
+            const time = new Intl.DateTimeFormat('en-US', options).format(new Date());
+            document.getElementById('clock').textContent = time;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
 </head>
 <body>
-    <div class="box">
+    <div class="everything">
+        <div class="box">
             <div class="header">
                 <div class="pfp"><img src="pfp.png" alt="pfp" width="100"></div>
                 <div class="name">Oget565</div>
                 <div class="user">@oget565</div>
-                
             </div>
             <div class="links">
-                <div class="github"><a href="https://github.com/Oget565">GitHub</a></div>
-                <div class="youtube"><a href="https://www.youtube.com/@oget565">YouTube</a></div>
-                <div class="twitch"><a href="https://www.twitch.tv/oget565">Twitch</a></div>
-                <div class="steam"><a href="https://steamcommunity.com/profiles/76561199031786456/">Steam</a></div>
-                <div class="support"><a href="https://www.donationalerts.com/r/oget565">Support</a></div>
-        </div>
-        <div class="time">
-            12:00:00 (UTC-8)
+                <a href="https://github.com/Oget565" class="github">GitHub</a>
+                <a href="https://www.youtube.com/@oget565" class="youtube">YouTube</a>
+                <a href="https://www.twitch.tv/oget565" class="twitch">Twitch</a>
+                <a href="https://steamcommunity.com/profiles/76561199031786456/" class="steam">Steam</a>
+                <a href="https://www.donationalerts.com/r/oget565" class="support">Support</a>
+            </div>
+            <div class="clock">
+                <div id="clock"></div>
+            </div>
         </div>
     </div>
 </body>

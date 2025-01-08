@@ -15,19 +15,37 @@ body {
   display: flex;
   justify-content: center; /* vertical */
   align-items: center; /* horisontal */
-  flex-direction: row;
+}
+
+.everything {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .box {
   display: flex;
   flex-direction: column;
   height: 600px;
-  width: 350px;
+  width: 300px;
   background-color: #131c27;
   font-size: 15pt;
   border-radius: 20px;
   padding: 40px;
-  
+  margin: 20px;
+}
+
+.stats {
+  display: flex;
+  width: 350px;
+  height: 300px;
+  background-color: #131c27;
+  font-size: 15pt;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px;
+  justify-content: center;
 }
 
 .name{
@@ -67,7 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  margin-bottom: 15px; /* Add margin to separate the links */
+  margin-bottom: 24px; /* Add margin to separate the links */
   transition: transform 0.2s ease;
 }
 
@@ -89,6 +107,7 @@ body {
 
 .support {
   background-color: #F57D07;
+  margin-bottom: 15px;
 }
 
 .links a {
@@ -100,9 +119,21 @@ body {
   transform: scale(1.05); /* Scale up the link slightly */
 }
 
-.time{
+.widgets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.time, #weather{
+  background-color: rgb(110, 110, 110);
+  height: 125px;
+  width: 350px;
+  border-radius: 15px;
+}
+
+.clock{
   display: flex;
   justify-content: center;
-  margin-top: 17px;
-  color: #f6ff79;
+  font-size: 20px;
 }
