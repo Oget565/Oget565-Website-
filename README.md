@@ -1,2 +1,2 @@
 # Oget565 Website
-Публичный проект Oget565, где я по рофлу делаю свой первый сайт визитку. На данный момент у меня ВООБЩЕ нет опыта в веб разработке, вот пытаюсь что-то нормальное сделать
+This is my public project, where I make my first website without experience.
