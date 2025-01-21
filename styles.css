@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,500;1,500&display=swap');
 
+@media (max-width: 550px) {
+  body {
+    transform: scale(0.9);
+  }
+}
+
 @media (max-width: 435px) {
   body {
     transform: scale(0.8);
   }
 }
 
-@media (max-width: 380px), (max-height: 650px) {
+@media (max-width: 380px) {
   body {
     transform: scale(0.7);
   }
@@ -28,7 +34,6 @@ body {
   display: flex;
   justify-content: center; /* vertical */
   align-items: center; /* horisontal */
-  flex-wrap: wrap;
 }
 
 .everything {
