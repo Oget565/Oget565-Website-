@@ -20,8 +20,7 @@
 
 body {
     min-height: 100vh;
-    background: rgb(43,58,92);
-    background: radial-gradient(circle, rgba(43,58,92,1) 0%, rgba(0,16,52,1) 100%);
+    background: radial-gradient(circle, rgb(27, 38, 63) 0%, rgb(0, 9, 29) 100%);
     color: #fdffe3;
     font-family: "Host Grotesk", serif;
     font-optical-sizing: auto;
@@ -40,7 +39,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .box {
@@ -52,7 +50,7 @@ body {
   font-size: 15pt;
   border-radius: 20px;
   padding: 40px;
-  
+  z-index: 1;
 }
 
 .stats {
@@ -164,4 +162,28 @@ body {
   justify-content: center;
   color: #fdffe3;
   font-size: 13px;  
+}
+
+/* .theme_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme{
+  position: absolute;
+  top: 5%;
+  right: 3%;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  
+}
+
+.w-6 h-6 text-gray-800 dark:text-white {
+  display: flex;
 }
