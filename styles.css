@@ -20,18 +20,18 @@
 }
 
 :root {
-  --base-color: #131c27d0; /* The box*/
-  --text-color: #fdffe3; /* The text */
-  --background-color: radial-gradient(circle, rgb(44, 59, 94) 0%, rgb(0, 9, 29) 100%);
-  --accent-color: #ffffff;
-}
-
-.darkmode {
-  --base-color: #6da57b28; /* The box*/
+  --base-color: #6da57b15; /* The box*/
   --text-color: #ffffff; /* The text */
   --background-color: radial-gradient(circle, rgba(136,173,255,1) 0%, rgb(58, 109, 230) 100%);
   --accent-color: #131c27;
   --button-color: #b1cef0;
+}
+
+:darkmode {
+  --base-color: #131c27d0; /* The box*/
+  --text-color: #fdffe3; /* The text */
+  --background-color: radial-gradient(circle, rgb(44, 59, 94) 0%, rgb(0, 9, 29) 100%);
+  --accent-color: #ffffff;
 }
 
 body {
@@ -116,9 +116,9 @@ body {
   padding: 40px;
   z-index: 1;
   backdrop-filter: blur(20px);
-  border-width: 2px;
+  border-width: 3px;
   border-style: solid;
-  border-color: #3a462e57;
+  border-color: #3a462e6e;
 }
 
 .name{
