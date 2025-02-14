@@ -27,7 +27,7 @@
 }
 
 .darkmode {
-  --base-color: #b1cef050; /* The box*/
+  --base-color: #6da57b28; /* The box*/
   --text-color: #ffffff; /* The text */
   --background-color: radial-gradient(circle, rgba(136,173,255,1) 0%, rgb(58, 109, 230) 100%);
   --accent-color: #131c27;
@@ -36,7 +36,8 @@
 
 body {
     min-height: 100vh;
-    background: var(--background-color);
+    /* background: var(--background-color); */
+    background: #333D29;
     color: var(--text-color);
     font-family: "Host Grotesk", serif;
     font-optical-sizing: auto;
@@ -46,6 +47,50 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 50%;
+  filter: blur(100px); /* ✅ Blurry for smooth blending */
+  opacity: 0.9;
+  animation: float 12s infinite ease-in-out alternate, morph 15s infinite ease-in-out alternate;
+}
+
+/* Floating effect */
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(50px, -60px); }
+  50% { transform: translate(-50px, 50px); }
+  75% { transform: translate(60px, 40px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Morphing effect */
+@keyframes morph {
+  0% { border-radius: 50%; }
+  50% { border-radius: 40% 60% 60% 40%; }
+  100% { border-radius: 50%; }
+}
+
+/* Blob positions */
+.blob:nth-child(1) { top: 5%; left: 10%; animation-delay: 0s; }
+.blob:nth-child(2) { top: 40%; left: 30%; animation-delay: 2s; }
+.blob:nth-child(3) { top: 60%; left: 50%; animation-delay: 4s; }
+.blob:nth-child(4) { top: 20%; left: 70%; animation-delay: 6s; }
+.blob:nth-child(5) { top: 70%; left: 80%; animation-delay: 8s; }
 
 body {
   display: flex;
@@ -70,7 +115,10 @@ body {
   border-radius: 20px;
   padding: 40px;
   z-index: 1;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(20px);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3a462e57;
 }
 
 .name{
