@@ -16,7 +16,7 @@ function updateBlobColors() {
     blobs.forEach(blob => {
         const currentColor = blob.style.backgroundColor;
         const newColor = getRandomColor(currentColor);
-        blob.style.transition = "background 6s ease-in-out"; // ✅ Smooth transition
+        blob.style.transition = "background 3s ease-in-out"; // ✅ Smooth transition
         blob.style.background = newColor;
     });
 }
