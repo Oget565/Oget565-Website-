@@ -1,6 +1,8 @@
-# Oget565 Website
+# Oget565-Website-v2
+URL: https://oget565.com
 
-OLD AS OF SEP 14, 2025. CHECK https://github.com/Oget565/Oget565-Website-v2
+A completely rewritten, new variant of my old, personal website
 
-
-This is my public project, where I make my first website without experience.
+Goals:
+  - Better and more beautiful design
+  - Hosted on my own server using Nginx

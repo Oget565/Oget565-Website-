@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color:#1a1a1a;
+    color: #fff5ee;
+    font-family: manrope;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.everything {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    min-width: 500px;
+    padding: 5%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.name {
+    margin-bottom: 10px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+.pfp img {
+    width: 150px;
+    margin: 30px;
+    margin-bottom: 10px;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.githubdiv, .thmdiv, .discorddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    margin: 0 10px;
+    border-radius: 12px;
+    border: 2px solid #a8a8a833;
+    background-color: #242424;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.githubdiv:hover, .thmdiv:hover, .discorddiv:hover {
+    transform: scale(0.97);
+}
+
+.githubdiv:hover{
+    border: 2px solid #2dba4e;
+}
+
+.thmdiv:hover{
+    border: 2px solid #26A5E4;
+}
+
+.discorddiv:hover{
+    border: 2px solid #5865F2;
+}
+
+.github,.thm,.discord{
+    display: flex;
+    text-decoration: none;
+    color: #fff5ee;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubsvg,.thmsvg,.discordsvg {
+    width: 27px;
+    fill: #fff5ee;
+
+}
+
+.full-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.devops svg {
+    margin-left: 25px;
+    fill: #fff5ee;
+    width: 65px;
+}
+
+.languages svg {
+    margin-right: 25px;
+    fill: #fff5ee;
+    width: 65px;
+}
+
+.other svg {
+    margin-right: 25px;
+    fill: #fff5ee;
+    width: 65px;
+}
+
+footer {
+    color: rgb(82, 82, 82);
+    font-family: monospace;
+}
+
+@media screen and (max-width: 500px) {
+    .pfp img {
+        width: 120px;
+        margin: 10px;
+    }
+
+    .name {
+        margin: 0px;
+        padding: 0px;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .githubdiv, .thmdiv, .discorddiv {
+        margin: 10px;
+}
+
+    .everything {
+        min-width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
