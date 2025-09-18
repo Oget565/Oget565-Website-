@@ -1,8 +1,4 @@
-# Oget565-Website-v2
-URL: https://oget565.com
+# Oget565-Website
+This was my first ever personal website.
 
-A completely rewritten, new variant of my old, personal website
-
-Goals:
-  - Better and more beautiful design
-  - Hosted on my own server using Nginx
+Not relevant anymore, check https://github.com/Oget565/Oget565-Website-v2 for the new version
